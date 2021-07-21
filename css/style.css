@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: hsl(257, 40%, 49%) url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 85% 100vh;
+}
+
+.container {
+    margin: 36px auto;
+    max-width: 1280px;
+}
+
+main {
+    color: #fff;
+    margin-top: 54px;
+}
+
+main > .container {
+    display: flex;
+}
+
+main h1 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.5em;
+    display: inline-block;
+    width: 400px;
+}
+
+main p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 1em;
+    display: inline-block;
+    width: 475px;
+}
+
+main img {
+    width: 615px;
+    height: 400px;
+}
+
+main a {
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    padding: 1em 4em;
+    border-radius: 2em;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #fff;
+    background: hsl(300, 69%, 71%);
+}
+
+.text-wrapper {
+    margin: 24px 0 0 48px;
+}
+
+.social-icons .container {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+}
+
+/* Responsive breakpoints */
+/* Mobile */
+@media screen and (max-width: 375px) {
+    body {
+        height: 100vh;
+        width: 100%;
+        background: hsl(257, 40%, 49%) url("../images/bg-mobile.svg") !important;
+        background-repeat: no-repeat !important;
+        background-size: 100%;
+        background-position: top center;
+    }
+
+    .container {
+        margin: 36px auto !important;
+        width: 100%;
+    }
+
+    main,
+    header {
+        width: 100% !important;
+    }
+
+    header {
+        margin: 0 36px;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    main > .container {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    main img {
+        width: 80% !important;
+        height: auto;
+    }
+
+    main h1 {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+        display: block;
+        width: 250px;
+    }
+
+    main p {
+        font-size: 0.8rem;
+        display: block;
+        width: 250px;
+    }
+
+    main a {
+        font-size: 0.6rem;
+        padding: 1em 5em;
+    }
+
+    .social-icons > .container {
+        justify-content: center !important;
+    }
+
+    .text-wrapper {
+        margin: 0 !important;
+    }
+}
