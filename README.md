@@ -48,8 +48,8 @@ To see how you can add code snippets, see below:
 
 ## Author
 
--   Instagram - [Muhammad Quraisy](https://www.your-site.com)
--   Frontend Mentor - [@iyefreedt](https://www.frontendmentor.io/profile/iyefreedy)
+-   Instagram - [iyefredickson](https://instagram.com/iyefredickson)
+-   Frontend Mentor - [@iyefreedy](https://www.frontendmentor.io/profile/iyefreedy)
 -   Twitter - [@iyefredickson](https://www.twitter.com/iyefredickson)
 
 ## Acknowledgments
