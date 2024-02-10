@@ -1,0 +1,131 @@
+@import url(reset.css);
+
+/* Variables */
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/* Styling */
+body {
+    background-image: url(../images/bg-mobile.svg);
+    background-color: var(--violet);
+    background-position: top;
+    background-repeat: no-repeat;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+header,
+main {
+    padding: 1.8rem 2.3rem;
+}
+
+header img {
+    width: 8rem;
+}
+
+main section {
+    margin-top: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+main section h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin-bottom: 1.25rem;
+}
+
+main section p {
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+}
+
+main section button {
+    padding: 0.75em 6em;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: var(--violet);
+    border-radius: 5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+main section button:active {
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+
+footer {
+    padding: 3rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+footer ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* Desktop breakpoint (1440px) */
+@media screen and (min-width: 1440px) {
+    body {
+        height: 100vh;
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    header img {
+        width: 14rem;
+    }
+
+    header,
+    main {
+        padding: 3.05rem 5rem;
+    }
+
+    main {
+        display: flex;
+    }
+
+    main section {
+        flex: 1;
+        text-align: start;
+        padding: 2.5rem 3rem;
+    }
+
+    main section h1 {
+        font-size: 2.5rem;
+    }
+
+    main section p {
+        font-size: 1.04rem;
+    }
+
+    main section button {
+        padding: 0.85em 3.8em;
+    }
+
+    footer {
+        position: relative;
+    }
+
+    footer ul {
+        position: absolute;
+        right: 5rem;
+    }
+}
